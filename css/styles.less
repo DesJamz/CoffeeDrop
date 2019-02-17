@@ -13,18 +13,14 @@ body {
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Roboto', sans-serif;
 }
-.section {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 1080px;
-}
+
 .header {
   position: relative;
+  display: block;
   height: 550px;
   margin: 0;
   padding: 0;
-  background-image:url('file:///C:/wamp/www/coffeedrop-build/images/shutterstock_326070713@2x.jpg');
+  background-image:url('file:///Users/laurenramsay/Desktop/coffeedrop-build/images/shutterstock_326070713.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -53,8 +49,8 @@ h1, h2, h3, h4, h5, h6, p, a {
           display: inline-block;
           list-style: none;
           margin: 0 10px;
-          font-size: 12px;
-          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: 300;
           &:hover {
             border-bottom: 1px solid #fff;
           }
@@ -66,93 +62,72 @@ h1, h2, h3, h4, h5, h6, p, a {
       }
     }
   }
-  .hero-text {
+  .title-wrapper {
+    margin-top: 20%;
     color: #fff;
-    font-size: 200px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-  }
-  h4 {
-    font-size: 38px;
-    font-weight: 100;
-    color: #fff;
-    margin-bottom: 30px;
-    span {
-      color: #e96b6b;
+    h2 {
+      font-size: 32px;
+    }
+    P {
+      font-weight: 100;
     }
   }
-  p {
-    font-weight: 100;
-    color: #fff;
-    font-size: 22px;
-  }
-  .social-wrapper {
+  .mockup-wrapper {
     position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 30px;
+    bottom: 0;
+    right: 0;
     img {
       display: block;
-      width: 200px;
-      margin: 0 auto;
     }
   }
 }
 
 .about-us {
   position: relative;
-  background-image: url('file:///C:/wamp/www/discovery-template-build/images/about-us-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  .text-wrapper {
-    text-align: left;
-    padding-left: 30px;
-    h5 {
-      font-size: 35px;
-      font-weight: 700;
+  display: block;
+  .title {
+    text-align: center;
+    h2 {
+
     }
-    h1 {
-      font-size: 160px;
-      font-weight: 700;
+  }
+  .step {
+    .icon-wrapper {
+      img {
+
+      }
     }
-    p {
-      font-size: 24px;
+    .text-wrapper {
+      p {
+
+      }
     }
   }
 }
 
 .app {
   position: relative;
-  background-image: url('file:///C:/wamp/www/discovery-template-build/images/app-bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  .point {
-    width: 230px;
-    display: block;
-    margin: 0 auto;
+  display: block;
+  background-color: #373737;
+  .title {
     text-align: center;
-    color: #fff;
-    .img-wrapper {
-      padding: 15px 0;
-      height: 140px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    p {
-      font-weight: 100;
-      font-size: 12px;
+    h2 {
+
     }
   }
-  .mockup-wrapper {
-    height: 100%;
+  .price-point {
+    p {
+
+    }
+    table {
+      tr {
+        td {
+
+        }
+      }
+    }
     img {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+
     }
   }
 }
@@ -179,9 +154,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   text-align: center;
   padding: 5px;
 }
-.center {
-  text-align: center;
-}
-.h-1080  {
-  height: 1080px;
+
+#map {
+  height: 500px;
 }
