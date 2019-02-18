@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     }
   }
   .title-wrapper {
-    margin-top: 20%;
+    margin-top: 50%;
     color: #fff;
     h2 {
       font-size: 32px;
@@ -85,22 +85,43 @@ h1, h2, h3, h4, h5, h6, p, a {
 .about-us {
   position: relative;
   display: block;
+  padding: 70px 0;
   .title {
     text-align: center;
+    padding: 15px 0;
     h2 {
-
+      font-size: 20px;
+      font-weight: 700;
+      color: #373737;
     }
   }
   .step {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    &:after {
+      content: url('../images/arrow.png');
+      position: absolute;
+      top: 25%;
+      right: 0;
+    }
     .icon-wrapper {
+      padding: 0 0 10px;
       img {
 
       }
     }
     .text-wrapper {
+      padding: 15px 0 0 0;
       p {
-
+        font-weight: 100;
       }
+    }
+  }
+  .last-step {
+    &:after {
+      display: none;
     }
   }
 }
@@ -108,30 +129,74 @@ h1, h2, h3, h4, h5, h6, p, a {
 .app {
   position: relative;
   display: block;
-  background-color: #373737;
+  background: #373737;
+  padding: 70px 0 100px;
   .title {
     text-align: center;
+    padding: 0 0 15px;
     h2 {
-
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
     }
   }
   .price-point {
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
     p {
-
+      font-weight: 700;
+      color: #27E69F;
     }
     table {
+      width: 100%;
       tr {
+        background-color: #4E4E4E;
+        &:nth-child(2) {
+          background-color: #626262;
+          border-radius: 10px;
+        }
         td {
-
+          padding: 10px 20px;
+          p {
+            text-align: left;
+            font-weight: 100;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+          }
         }
       }
+    }
+    img {
+      width: 40px;
+      display: block;
+      position: absolute;
+      bottom: -30px;
+      left: 45%;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  display: block;
+  background: #373737;
+  margin-top: -6px;
+  .footer-logo {
+    text-align: center;
+    padding: 20px 0;
+    p {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
     }
     img {
 
     }
   }
 }
-
 
 .cover {
   width: 100%;
@@ -153,8 +218,4 @@ h1, h2, h3, h4, h5, h6, p, a {
   vertical-align: middle;
   text-align: center;
   padding: 5px;
-}
-
-#map {
-  height: 500px;
 }
